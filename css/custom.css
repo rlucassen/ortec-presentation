@@ -1,0 +1,47 @@
+.reveal .slides section .fragment.css-animation {
+    visibility: inherit;
+    opacity: 1;
+}
+
+.glow {
+  font-size: 80px;
+}
+
+.glow.visible {
+    animation: glow 1s ease-in forwards;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #e60000, 0 0 12px #e60000,
+      0 0 15px #e60000, 0 0 18px #e60000, 0 0 21px #e60000;
+  }
+}
+
+.falldown {
+    transform-origin: top left;
+}
+.falldown.visible {
+    animation: falldown 5s ease forwards;
+}
+
+@keyframes falldown {
+    25% {
+        transform: rotate(100deg);
+    }
+    38% {
+        transform: rotate(75deg);
+    }
+    39% {
+        transform: rotate(75deg);
+    }
+    48% {
+        transform: rotate(95deg);
+    }
+    100% {
+        transform: translateY(1000px) rotate(95deg);
+    }
+}
