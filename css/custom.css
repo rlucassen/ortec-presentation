@@ -3,6 +3,19 @@
     opacity: 1;
 }
 
+.large-text {
+    font-size: 1.5em;
+}
+
+.age {
+    display: inline-block;
+    width: 0;
+}
+
+.age.visible {
+    width: auto;
+}
+
 .glow {
   font-size: 80px;
 }
