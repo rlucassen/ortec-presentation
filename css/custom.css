@@ -16,6 +16,32 @@
     width: auto;
 }
 
+.zoetermeer-box {
+    margin: -100px auto 0;
+    width: 800px;
+    position: relative;
+}
+
+.zoetermeer-box .home {
+    position: absolute;
+    top: 290px;
+    left: 570px;
+}
+
+.zoetermeer-box > * > * {
+    display: block;
+}
+
+.zoetermeer-box .home .arrow{
+    transform: rotate(180deg);
+}
+
+.zoetermeer-box .ortec {
+    position: absolute;
+    top: 460px;
+    left: 280px;
+}
+
 .glow {
   font-size: 80px;
 }
