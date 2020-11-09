@@ -38,8 +38,8 @@
 
 .zoetermeer-box .ortec {
     position: absolute;
-    top: 460px;
-    left: 280px;
+    top: 470px;
+    left: 300px;
 }
 
 .glow {
@@ -58,6 +58,9 @@
     text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #e60000, 0 0 12px #e60000,
       0 0 15px #e60000, 0 0 18px #e60000, 0 0 21px #e60000;
   }
+}
+
+.ortec-section img {
 }
 
 .falldown {
@@ -80,7 +83,120 @@
     48% {
         transform: rotate(95deg);
     }
-    100% {
+    99% {
         transform: translateY(1000px) rotate(95deg);
     }
+    100% {
+        display: none;
+        transform: translateY(1000px) rotate(95deg);
+    }
+}
+
+.hobby-container > * {
+    display: inline-block;
+    width: 200px;
+}
+
+.hobby-container img {
+    margin-bottom: 0;
+}
+
+.hobby-container img:nth-child(2) {
+    margin-left: -190px;
+}
+
+.hobby-container p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.world {
+    position: relative;
+}
+
+.boat {
+    transform-origin: top left;
+    position: absolute;
+    left: 470px;
+    top: 160px;
+    width: 50px;
+}
+.boat.visible {
+    animation: travel 10s ease infinite;
+}
+
+@keyframes travel {
+    0% {
+        left: 470px;
+        top: 160px;
+    }
+    10% {
+        left: 420px;
+        top: 230px;
+    }
+    20% {
+        left: 300px;
+        top: 250px;
+    }
+    30% {
+        left: 260px;
+        top: 290px;
+    }
+    40% {
+        left: 30px;
+        top: 350px;
+        opacity: 1;
+    }
+    45% {
+        left: 30px;
+        top: 350px;
+        opacity: 0;
+    }
+    46% {
+        left: 890px;
+        top: 350px;
+        opacity: 0;
+    }
+    50% {
+        left: 890px;
+        top: 350px;
+        opacity: 1;
+    }
+    60% {
+        left: 790px;
+        top: 310px;
+    }
+    70% {
+        left: 690px;
+        top: 270px;
+    }
+    80% {
+        left: 570px;
+        top: 260px;
+    }
+    90% {
+        left: 540px;
+        top: 200px;
+    }
+}
+
+
+
+.formal-thursday-section {
+    top: 0 !important;
+}
+
+.formal-thursday-container {
+    height: 100%;
+}
+
+.formal-thursday-container > div {
+    background-color: white;
+    padding: 10px 8px 25px;
+    position: absolute;
+    display: none;
+}
+
+.formal-thursday-container > div > img {
+    margin: 0;
 }
